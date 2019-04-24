@@ -103,7 +103,7 @@ static const char *colorname[] = {
 	"#82aaff",
 	"#c792ea",
 	"#89ddff",
-	"#aebbc5",
+	"#cedbe5",
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
