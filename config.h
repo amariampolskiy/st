@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=18:antialias=true:autohint=true";
-static int borderpx = 2;
+static char *font = "Liberation Mono:pixelsize=16:antialias=true:autohint=true";
+static int borderpx = 3;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -97,7 +97,7 @@ static const char *colorname[] = {
 	"#5F8787",
 	"#6C6C6C",
 	"#444444",
-	"#FF8700",
+	"#FF8787",
 	"#87AF87",
 	"#FFFFAF",
 	"#8FAFD7",
