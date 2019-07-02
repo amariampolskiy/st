@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=18:antialias=true:autohint=true";
+static char *font = "Liberation Mono:pixelsize=22:antialias=true:autohint=true";
 static int borderpx = 3;
 
 /*
@@ -200,8 +200,8 @@ static MouseShortcut mshortcuts[] = {
 #define TERMMOD (ControlMask|ShiftMask)
 
 static char *openurlcmd[] = { "/bin/sh", "-c",
-    "grep -aEo '(http|https)://[a-zA-Z0-9./?=_-]*'  | uniq | dmenu -l 10 | xargs -r xdg-open",
-    "externalpipe", NULL };
+	"grep -aEo '(http|https)://[a-zA-Z0-9./?=_-]*'  | uniq | dmenu -l 10 | xargs -r xdg-open",
+	"externalpipe", NULL };
 
 static Shortcut shortcuts[] = {
 	/* mask                 keysym          function        argument */
@@ -224,7 +224,7 @@ static Shortcut shortcuts[] = {
 	{ ShiftMask,            XK_Up,		kscrollup,      {.i = 1} },
 	{ ShiftMask,            XK_Down,	kscrolldown,    {.i = 1} },
 	{ TERMMOD,              XK_I,           iso14755,       {.i =  0} },
-    	{ TERMMOD,		XK_L,		externalpipe,	{ .v = openurlcmd } },
+	{ TERMMOD,              XK_L,           externalpipe,   { .v = openurlcmd } },
 };
 
 /*
